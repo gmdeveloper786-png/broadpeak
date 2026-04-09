@@ -51,7 +51,11 @@ Network Solutions
                     <div class="col-xl-8 col-lg-7">
                         <div class="insurance-details__right">
                             <div class="insurance-details__img-1">
-                                <video src="assets/images/solutions/NetworkSolutions.mp4" autoplay muted loop controls width="100%" height="100%" controlslist="nodownload"></video>
+                                <video src="assets/images/solutions/NetworkSolutions.mp4" autoplay muted loop playsinline
+                                    webkit-playsinline controls width="100%" height="100%"
+                                    controlslist="nodownload noplaybackrate noremoteplayback"
+                                    disablepictureinpicture disableremoteplayback
+                                    oncontextmenu="return false;"></video>
                           
                             </div>                         
                             <h3 class="insurance-details__title-1">Network Solutions</h3>

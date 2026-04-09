@@ -65,7 +65,7 @@ About Us
 
 
                 <!--About One Start-->
-                <section class="about-one">
+                <section class="about-one about-section-two">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6">

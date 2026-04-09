@@ -34369,7 +34369,11 @@ ul li ul .is-new-menu > a > span::after {
   }
 
   .about-one {
-    padding: 50px 0 50px 0;
+    padding: 50px 0 0 0;
+  }
+
+  .about-section-two {
+    padding: 0 0 0 0;
   }
 
   .feature-two {
@@ -34397,20 +34401,66 @@ ul li ul .is-new-menu > a > span::after {
   .footer-widget-four__contact-list li .content {
     margin-left: 20px;
   }
-    .section-title-shape-1 {
-      display: none;
+
+  .section-title-shape-1 {
+    display: none;
+  }
+
+  .section-title-shape-2 {
+    display: none;
+  }
+
+  .feature-two__img img {
+    height: 250px;
+  }
+
+  .section-sub-title-box {
+    margin-left: 0px;
+  }
+
+  .about-one__right .section-title {
+    margin-bottom: 27px;
+    text-align: center;
+  }
+
+  .about-one__img-1>img {
+    height: 200px;
+  }
+
+  .about-one__text-2 {
+    margin-bottom: 30px;
+  }
+
+  .get-insurance-four {
+    padding: 70px 0 20px;
+  }
+
+  .contact-page {
+    padding: 90px 0 70px;
+  }
+
+  .get-insurance-four__call {
+    margin-top: 0px;
+  }
+
+  .get-insurance-four__call {
+    display: block;
+  }
+
+  .get-insurance-four__call-icon {
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+    .insurance-page-one {
+      padding: 70px 0 50px;
     }
-        .section-title-shape-2 {
-          display: none;
+        .insurance-details {
+          padding: 70px 0 70px;
+
         }
-                .feature-two__img img {
-                  height: 250px;
-                }
-                                .section-sub-title-box {
-                                  margin-left: 0px;
-                                }
-                                                                .about-one__right .section-title {
-                                                                  margin-bottom: 27px;
-                                                                  text-align: center;
-                                                                }
+}
+
+/* Hide native video download control (mobile WebKit / Chrome) where supported */
+.insurance-details__img-1 video::-webkit-media-controls-download-button {
+  display: none !important;
 }

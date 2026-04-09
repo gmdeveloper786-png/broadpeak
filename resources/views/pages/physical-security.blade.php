@@ -52,7 +52,10 @@ Physical Security
         <div class="insurance-details__right">
           <div class="insurance-details__img-1">
             <video src="assets/images/solutions/PhysicalSecurity.mp4" autoplay muted loop controls width="100%"
-              height="100%" controlslist="nodownload"></video>
+              height="100%" controlslist="nodownload noplaybackrate noremoteplayback"
+              webkit-playsinline controls
+              disablepictureinpicture disableremoteplayback
+              oncontextmenu="return false;"></video>
 
           </div>
           <h3 class="insurance-details__title-1">Physical Security</h3>

@@ -102,7 +102,7 @@
                         </ul>
                       </li>
                       <li class="dropdown">
-                        Vendors
+                        <a href="#">Vendors</a>
                         <ul>
                           <li><a href="https://securityshells.com/" target="_blank">HID</a></li>
                           <li><a href="https://www.wavelynx.com/" target="_blank">Wavelynx</a></li>
