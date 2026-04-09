@@ -27622,9 +27622,9 @@ ul li ul .is-new-menu > a > span::after {
     display: none;
   }
   .main-slider__title {
-    font-size: 35px;
+    font-size: 30px;
     line-height: 50px;
-    margin-bottom: 29px;
+    margin-bottom: 15px;
   }
   .main-slider__title br {
     display: none;
@@ -27639,8 +27639,9 @@ ul li ul .is-new-menu > a > span::after {
     padding-bottom: 36px;
   }
   .main-slider .container {
-    padding-top: 138px;
-    padding-bottom: 115px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 500px;
   }
   .main-slider-two__video-link {
     display: none;
