@@ -9,7 +9,7 @@ Physical Security
 
 <!--Page Header Start-->
 <section class="page-header">
-  <div class="page-header-bg" style="background-image: url(assets/images/home/about-bread.jpg)">
+  <div class="page-header-bg" style="background-image: url({{ asset('assets/images/home/about-bread.jpg') }})">
   </div>
   <div class="container">
     <div class="page-header__inner wow fadeInUp" data-wow-delay="0ms">
@@ -51,7 +51,7 @@ Physical Security
       <div class="col-xl-8 col-lg-7 wow fadeInUp" data-wow-delay="180ms">
         <div class="insurance-details__right">
           <div class="insurance-details__img-1">
-            <video src="assets/images/solutions/PhysicalSecurity.mp4" autoplay muted loop controls width="100%"
+            <video src="{{ asset('assets/images/solutions/PhysicalSecurity.mp4') }}" autoplay muted loop controls width="100%"
               height="100%" controlslist="nodownload noplaybackrate noremoteplayback"
               webkit-playsinline controls
               disablepictureinpicture disableremoteplayback

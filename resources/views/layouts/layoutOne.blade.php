@@ -83,7 +83,7 @@
             <div class="main-menu__wrapper-inner clearfix">
               <div class="main-menu__left">
                 <div class="main-menu__logo">
-                  <a href="{{ route('home') }}"><img src="assets/images/header-logo.svg" alt="Broadpeak-Intl"></a>
+                  <a href="{{ route('home') }}"><img src="{{ asset('assets/images/header-logo.svg') }}" alt="Broadpeak-Intl"></a>
                 </div>
                 <div class="main-menu__main-menu-box">
                   <div class="main-menu__main-menu-box-inner">
@@ -161,7 +161,7 @@
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
               <div class="footer-widget-four__column footer-widget-four__about">
                 <div class="footer-widget-four__logo">
-                  <a href="{{ route('home') }}"><img src="assets/images/footer-logo.svg" width="100%" height="70"
+                  <a href="{{ route('home') }}"><img src="{{ asset('assets/images/footer-logo.svg') }}" width="100%" height="70"
                       alt="Broadpeak-Intl"></a>
                 </div>
                 <div class="footer-widget-four__about-text-box">
@@ -296,7 +296,7 @@
       <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
       <div class="logo-box">
-        <a href="{{ route('home') }}" aria-label="logo image"><img src="assets/images/footer-logo.svg" alt=" Broadpeak-Intl"></a>
+        <a href="{{ route('home') }}" aria-label="logo image"><img src="{{ asset('assets/images/footer-logo.svg') }}" alt=" Broadpeak-Intl"></a>
       </div>
       <!-- /.logo-box -->
       <div class="mobile-nav__container"></div>

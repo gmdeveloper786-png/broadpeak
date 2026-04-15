@@ -15,11 +15,30 @@ class ContactFormController extends Controller
             'email' => 'required|email|max:255',
             'company' => 'nullable|string|max:255',
             'message' => 'required|string|max:5000',
+            'cv' => 'nullable|file|max:5120|mimes:pdf,doc,docx',
         ]);
+
+        $attachmentPath = null;
+        $attachmentOriginalName = null;
+        if ($request->hasFile('cv')) {
+            $file = $request->file('cv');
+            $attachmentPath = $file->getRealPath();
+            $attachmentOriginalName = $file->getClientOriginalName();
+        }
+
+        $fields = collect($validated)->except('cv')->all();
+        if ($attachmentOriginalName !== null) {
+            $fields['cv'] = 'Attached: '.$attachmentOriginalName;
+        }
 
         $to = config('mail.contact_to');
 
-        Mail::to($to)->send(new ContactSubmissionMail('Contact form', $validated));
+        Mail::to($to)->send(new ContactSubmissionMail(
+            'Contact form',
+            $fields,
+            $attachmentPath,
+            $attachmentOriginalName
+        ));
 
         return redirect()->back()->with('form_success', 'Thank you — your message has been sent.');
     }

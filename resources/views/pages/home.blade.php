@@ -25,7 +25,7 @@ Home
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <div class="image-layer" style="background-image: url(assets/images/hero-section/slider-1.jpg);"></div>
+                <div class="image-layer" style="background-image: url({{ asset('assets/images/hero-section/slider-1.jpg') }});"></div>
                 <!-- /.image-layer -->
 
                 <div class="container">
@@ -49,7 +49,7 @@ Home
             </div>
 
             <div class="swiper-slide">
-                <div class="image-layer" style="background-image: url(assets/images/hero-section/slider-2.jpg);"></div>
+                <div class="image-layer" style="background-image: url({{ asset('assets/images/hero-section/slider-2.jpg') }});"></div>
                 <!-- /.image-layer -->
 
                 <div class="container">
@@ -72,7 +72,7 @@ Home
             </div>
 
             <div class="swiper-slide">
-                <div class="image-layer" style="background-image: url(assets/images/hero-section/slider-3.jpg);"></div>
+                <div class="image-layer" style="background-image: url({{ asset('assets/images/hero-section/slider-3.jpg') }});"></div>
                 <!-- /.image-layer -->
 
                 <div class="container">
@@ -150,52 +150,52 @@ Home
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <a href="https://securityshells.com/" target="_blank">
-                                    <img src="assets/images/brand-vendors/hid.png" alt="HID">
+                                    <img src="{{ asset('assets/images/brand-vendors/hid.png') }}" alt="HID">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://www.wavelynx.com/" target="_blank">
-                                    <img src="assets/images/brand-vendors/wavelynx.png" alt="Wavelynx">
+                                    <img src="{{ asset('assets/images/brand-vendors/wavelynx.png') }}" alt="Wavelynx">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://golmar.es/" target="_blank">
-                                    <img src="assets/images/brand-vendors/golmar.png" alt="Golmar">
+                                    <img src="{{ asset('assets/images/brand-vendors/golmar.png') }}" alt="Golmar">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://www.foredgetech.com/" target="_blank">
-                                    <img src="assets/images/brand-vendors/foredge.png" alt="Foredge">
+                                    <img src="{{ asset('assets/images/brand-vendors/foredge.png') }}" alt="Foredge">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://www.huawei.com/en/" target="_blank">
-                                    <img src="assets/images/brand-vendors/huawei.png" alt="Huawei">
+                                    <img src="{{ asset('assets/images/brand-vendors/huawei.png') }}" alt="Huawei">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://www.ceburu.com/" target="_blank">
-                                    <img src="assets/images/brand-vendors/ceburu.png" alt="Ceburu">
+                                    <img src="{{ asset('assets/images/brand-vendors/ceburu.png') }}" alt="Ceburu">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://www.h3c.com/en/" target="_blank">
-                                    <img src="assets/images/brand-vendors/h3c.png" alt="H3C">
+                                    <img src="{{ asset('assets/images/brand-vendors/h3c.png') }}" alt="H3C">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://zerowl.io/" target="_blank">
-                                    <img src="assets/images/brand-vendors/Zerowl.png" alt="Zerowl">
+                                    <img src="{{ asset('assets/images/brand-vendors/Zerowl.png') }}" alt="Zerowl">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://www.lenovo.com/eg/en/" target="_blank">
-                                    <img src="assets/images/brand-vendors/lenovo.png" alt="Lenovo">
+                                    <img src="{{ asset('assets/images/brand-vendors/lenovo.png') }}" alt="Lenovo">
                                 </a>
                             </div><!-- /.swiper-slide -->
                             <div class="swiper-slide">
                                 <a href="https://www.cisco.com/" target="_blank">
-                                    <img src="assets/images/brand-vendors/cisco.svg" alt="Cisco">
+                                    <img src="{{ asset('assets/images/brand-vendors/cisco.svg') }}" alt="Cisco">
                                 </a>
                             </div><!-- /.swiper-slide -->
                         </div>
@@ -216,7 +216,7 @@ Home
                     <div class="wow slideInLeft" data-wow-delay="100ms" data-wow-duration="900ms">
                         <div class="about-one__img-box" data-tilt>
                             <div class="about-one__img">
-                                <img src="assets/images/about/About-us.jpg" alt="Broadpeak-Intl">
+                                <img src="{{ asset('assets/images/about/About-us.jpg') }}" alt="Broadpeak-Intl">
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@ Home
             <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
                 <div class="feature-two__single" data-tilt>
                     <div class="feature-two__img">
-                        <img src="assets/images/home/networking-switches.jpg" alt="Networking Switches">
+                        <img src="{{ asset('assets/images/home/networking-switches.jpg') }}" alt="Networking Switches">
                     </div>
                     <div class="feature-two__content">
                         <div class="feature-two__content-inner">
@@ -305,7 +305,7 @@ Home
             <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
                 <div class="feature-two__single" data-tilt>
                     <div class="feature-two__img">
-                        <img src="assets/images/home/wifi-products.jpg" alt="WiFi Products">
+                        <img src="{{ asset('assets/images/home/wifi-products.jpg') }}" alt="WiFi Products">
                     </div>
                     <div class="feature-two__content">
                         <div class="feature-two__content-inner">
@@ -324,7 +324,7 @@ Home
             <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="300ms">
                 <div class="feature-two__single" data-tilt>
                     <div class="feature-two__img">
-                        <img src="assets/images/home/ups-systems.jpg" alt="UPS Systems">
+                        <img src="{{ asset('assets/images/home/ups-systems.jpg') }}" alt="UPS Systems">
                     </div>
                     <div class="feature-two__content">
                         <div class="feature-two__content-inner">
@@ -343,7 +343,7 @@ Home
             <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="400ms">
                 <div class="feature-two__single" data-tilt>
                     <div class="feature-two__img">
-                        <img src="assets/images/home/access-control-readers.jpg" alt="Access Control Readers">
+                        <img src="{{ asset('assets/images/home/access-control-readers.jpg') }}" alt="Access Control Readers">
                     </div>
                     <div class="feature-two__content">
                         <div class="feature-two__content-inner">
@@ -389,7 +389,7 @@ Home
                     <div class="services-two__single" data-tilt>
                         <div class="services-two__icon-box">
                             <div class="services-two__icon">
-                                <img src="assets/images/home/1.svg" alt="Expertise">
+                                <img src="{{ asset('assets/images/home/1.svg') }}" alt="Expertise">
                             </div>
                         </div>
                         <h3 class="services-two__title">Expertise</h3>
@@ -402,7 +402,7 @@ Home
                     <div class="services-two__single" data-tilt>
                         <div class="services-two__icon-box">
                             <div class="services-two__icon">
-                                <img src="assets/images/home/2.svg" alt="Quality Products">
+                                <img src="{{ asset('assets/images/home/2.svg') }}" alt="Quality Products">
                             </div>
                         </div>
                         <h3 class="services-two__title">Quality Products</h3>
@@ -415,7 +415,7 @@ Home
                     <div class="services-two__single" data-tilt>
                         <div class="services-two__icon-box">
                             <div class="services-two__icon">
-                                <img src="assets/images/home/3.svg" alt="Exceptional Support">
+                                <img src="{{ asset('assets/images/home/3.svg') }}" alt="Exceptional Support">
                             </div>
                         </div>
                         <h3 class="services-two__title">Exceptional Support</h3>
@@ -464,9 +464,9 @@ Home
                 <div class="item">
                     <div class="portfolio__single">
                         <div class="portfolio__img">
-                            <img src="assets/images/products/p-1.jpg" alt="Product 1">
+                            <img src="{{ asset('assets/images/products/p-1.jpg') }}" alt="Product 1">
                             <div class="portfolio__plus">
-                                <a href="assets/images/products/p-1.jpg" class="img-popup"><span
+                                <a href="{{ asset('assets/images/products/p-1.jpg') }}" class="img-popup"><span
                                         class="icon-plus"></span></a>
                             </div>
                         </div>
@@ -477,9 +477,9 @@ Home
                 <div class="item">
                     <div class="portfolio__single">
                         <div class="portfolio__img">
-                            <img src="assets/images/products/p-2.jpg" alt="Product 2">
+                            <img src="{{ asset('assets/images/products/p-2.jpg') }}" alt="Product 2">
                             <div class="portfolio__plus">
-                                <a href="assets/images/products/p-2.jpg" class="img-popup"><span
+                                <a href="{{ asset('assets/images/products/p-2.jpg') }}" class="img-popup"><span
                                         class="icon-plus"></span></a>
                             </div>
                         </div>
@@ -490,9 +490,9 @@ Home
                 <div class="item">
                     <div class="portfolio__single">
                         <div class="portfolio__img">
-                            <img src="assets/images/products/p-3.jpg" alt="Product 3">
+                            <img src="{{ asset('assets/images/products/p-3.jpg') }}" alt="Product 3">
                             <div class="portfolio__plus">
-                                <a href="assets/images/products/p-3.jpg" class="img-popup"><span
+                                <a href="{{ asset('assets/images/products/p-3.jpg') }}" class="img-popup"><span
                                         class="icon-plus"></span></a>
                             </div>
                         </div>
@@ -503,9 +503,9 @@ Home
                 <div class="item">
                     <div class="portfolio__single">
                         <div class="portfolio__img">
-                            <img src="assets/images/products/p-4.jpg" alt="Product 4">
+                            <img src="{{ asset('assets/images/products/p-4.jpg') }}" alt="Product 4">
                             <div class="portfolio__plus">
-                                <a href="assets/images/products/p-4.jpg" class="img-popup"><span
+                                <a href="{{ asset('assets/images/products/p-4.jpg') }}" class="img-popup"><span
                                         class="icon-plus"></span></a>
                             </div>
                         </div>

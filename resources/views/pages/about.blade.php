@@ -8,7 +8,7 @@ About Us
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/home/about-bread.jpg)">
+            <div class="page-header-bg" style="background-image: url({{ asset('assets/images/home/about-bread.jpg') }})">
             </div>
             <div class="container">
                 <div class="page-header__inner wow fadeInUp" data-wow-delay="0ms">
@@ -32,7 +32,7 @@ About Us
                             <div class="wow slideInLeft" data-wow-delay="100ms" data-wow-duration="900ms">
                                 <div class="about-one__img-box" data-tilt>
                                     <div class="about-one__img about-one__img-1">
-                                        <img src="assets/images/about/aboutp1.jpg" alt="Broadpeak-Intl">
+                                        <img src="{{ asset('assets/images/about/aboutp1.jpg') }}" alt="Broadpeak-Intl">
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ About Us
                                 <div class="about-one__left">
                                     <div class="about-one__img-box" data-tilt>
                                         <div class="about-one__img">
-                                            <img src="assets/images/about/aboutp2.jpg" alt="Broadpeak-Intl">
+                                            <img src="{{ asset('assets/images/about/aboutp2.jpg') }}" alt="Broadpeak-Intl">
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@ About Us
                             <div class="wow slideInLeft" data-wow-delay="100ms" data-wow-duration="900ms">
                                 <div class="about-one__img-box" data-tilt>
                                     <div class="about-one__img">
-                                        <img src="assets/images/about/About-us.jpg" alt="Broadpeak-Intl">
+                                        <img src="{{ asset('assets/images/about/About-us.jpg') }}" alt="Broadpeak-Intl">
                                     </div>
                                 </div>
                             </div>

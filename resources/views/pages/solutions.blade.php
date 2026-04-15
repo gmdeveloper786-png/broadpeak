@@ -8,7 +8,7 @@ Solutions
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/home/about-bread.jpg)">
+            <div class="page-header-bg" style="background-image: url({{ asset('assets/images/home/about-bread.jpg') }})">
             </div>
             <div class="container">
                 <div class="page-header__inner wow fadeInUp" data-wow-delay="0ms">
@@ -31,7 +31,7 @@ Solutions
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
-                                <img src="assets/images/solutions/NetworkSolutions.webp" alt="Network Solutions">
+                                <img src="{{ asset('assets/images/solutions/NetworkSolutions.webp') }}" alt="Network Solutions">
                             </div>
                             <div class="service-one__content">
                                 <h2 class="service-one__title"><a href="{{ route('network-solutions') }}">Network Solutions</a></h2>
@@ -43,7 +43,7 @@ Solutions
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
-                                <img src="assets/images/solutions/PhysicalSecurity.webp" alt="Physical Security">
+                                <img src="{{ asset('assets/images/solutions/PhysicalSecurity.webp') }}" alt="Physical Security">
                             </div>
                             <div class="service-one__content">
                                 <h2 class="service-one__title"><a href="{{ route('physical-security') }}">Physical Security</a></h2>
@@ -55,7 +55,7 @@ Solutions
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
-                                <img src="assets/images/solutions/PowerSolutions.webp" alt="Power Solutions">
+                                <img src="{{ asset('assets/images/solutions/PowerSolutions.webp') }}" alt="Power Solutions">
                             </div>
                             <div class="service-one__content">
                                 <h2 class="service-one__title"><a href="{{ route('power-solutions') }}">Power Solutions</a></h2>
@@ -67,7 +67,7 @@ Solutions
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                         <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
-                                <img src="assets/images/solutions/StorageSolutions.webp" alt="Storage Solutions">
+                                <img src="{{ asset('assets/images/solutions/StorageSolutions.webp') }}" alt="Storage Solutions">
                             </div>
                             <div class="service-one__content">
                                 <h2 class="service-one__title"><a href="{{ route('storage-solutions') }}">Storage Solutions</a></h2>
@@ -79,7 +79,7 @@ Solutions
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms">
                         <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
-                                <img src="assets/images/solutions/infrastructureSolutions.webp" alt="Infrastructure Solutions">
+                                <img src="{{ asset('assets/images/solutions/InfrastructureSolutions.webp') }}" alt="Infrastructure Solutions">
                             </div>
                             <div class="service-one__content">
                                 <h2 class="service-one__title"><a href="{{ route('infrastructure-solutions') }}">Infrastructure Solutions</a>

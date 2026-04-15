@@ -8,7 +8,7 @@ Contact Us
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/home/about-bread.jpg)">
+            <div class="page-header-bg" style="background-image: url({{ asset('assets/images/home/about-bread.jpg') }})">
             </div>
             <div class="container">
                 <div class="page-header__inner wow fadeInUp" data-wow-delay="0ms">
@@ -277,10 +277,10 @@ Contact Us
                                 <div class="section-sub-title-box">
                                     <p class="section-sub-title">Contact us</p>
                                     <div class="section-title-shape-1">
-                                        <img src="assets/images/shapes/section-title-shape-1.png" alt="">
+                                        <img src="{{ asset('assets/images/shapes/section-title-shape-1.png') }}" alt="">
                                     </div>
                                     <div class="section-title-shape-2">
-                                        <img src="assets/images/shapes/section-title-shape-2.png" alt="">
+                                        <img src="{{ asset('assets/images/shapes/section-title-shape-2.png') }}" alt="">
                                     </div>
                                 </div>
                                 <h2 class="section-title__title">Get in touch with us</h2>
@@ -290,7 +290,7 @@ Contact Us
                     <div class="col-xl-12 col-lg-12 wow fadeInUp" data-wow-delay="120ms">
                         <div class="contact-page__right">
                             <div class="contact-page__form">
-                                <form action="{{ route('contact.submit') }}" method="post" class="comment-one__form">
+                                <form action="{{ route('contact.submit') }}" method="post" class="comment-one__form" enctype="multipart/form-data">
                                     @csrf
                                     <div class="row">
                                         <div class="col-xl-6">
@@ -306,6 +306,24 @@ Contact Us
                                         <div class="col-xl-12">
                                             <div class="comment-form__input-box">
                                                 <input type="text" placeholder="Company Name" name="company" value="{{ old('company') }}">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box contact-page__cv-box">
+                                                <span class="contact-page__cv-heading">Upload CV (optional)</span>
+                                                <div class="contact-page__cv-field">
+                                                    <input id="contact-cv" class="contact-page__cv-input" type="file" name="cv"
+                                                        accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                                                        aria-describedby="contact-cv-hint">
+                                                    <div class="contact-page__cv-inner">
+                                                        <span class="contact-page__cv-pick">Choose file</span>
+                                                        <span class="contact-page__cv-filename" id="contact-cv-filename" role="status" aria-live="polite">No file selected</span>
+                                                    </div>
+                                                </div>
+                                                <p id="contact-cv-hint" class="contact-page__cv-hint">PDF, DOC or DOCX — max 5 MB</p>
+                                                @error('cv')
+                                                    <p class="text-danger small mb-0 mt-1">{{ $message }}</p>
+                                                @enderror
                                             </div>
                                         </div>
                                     </div>
@@ -329,7 +347,15 @@ Contact Us
         </section>
         <!--Contact Page End-->
 
-               
-
+  <script>
+    (function () {
+      var input = document.getElementById('contact-cv');
+      var nameEl = document.getElementById('contact-cv-filename');
+      if (!input || !nameEl) return;
+      input.addEventListener('change', function () {
+        nameEl.textContent = (this.files && this.files[0]) ? this.files[0].name : 'No file selected';
+      });
+    })();
+  </script>
 
 @endsection

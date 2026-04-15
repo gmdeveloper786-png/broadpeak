@@ -8,7 +8,7 @@ Careers
 
 <!--Page Header Start-->
 <section class="page-header">
-  <div class="page-header-bg" style="background-image: url(assets/images/home/about-bread.jpg)">
+  <div class="page-header-bg" style="background-image: url({{ asset('assets/images/home/about-bread.jpg') }})">
   </div>
   <div class="container">
     <div class="page-header__inner wow fadeInUp" data-wow-delay="0ms">
