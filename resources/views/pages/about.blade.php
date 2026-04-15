@@ -11,7 +11,7 @@ About Us
             <div class="page-header-bg" style="background-image: url(assets/images/home/about-bread.jpg)">
             </div>
             <div class="container">
-                <div class="page-header__inner">
+                <div class="page-header__inner wow fadeInUp" data-wow-delay="0ms">
                     <ul class="thm-breadcrumb list-unstyled">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><span>/</span></li>
@@ -29,15 +29,17 @@ About Us
                 <div class="row">
                     <div class="col-xl-6">
                         <div class="about-one__left">
-                            <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-                                <div class="about-one__img about-one__img-1">
-                                    <img src="assets/images/about/aboutp1.jpg" alt="Broadpeak-Intl">
+                            <div class="wow slideInLeft" data-wow-delay="100ms" data-wow-duration="900ms">
+                                <div class="about-one__img-box" data-tilt>
+                                    <div class="about-one__img about-one__img-1">
+                                        <img src="assets/images/about/aboutp1.jpg" alt="Broadpeak-Intl">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6">
-                        <div class="about-one__right">
+                        <div class="about-one__right wow fadeInUp" data-wow-delay="200ms">
                             <div class="section-title text-left">
                                 <h2 class="section-title__title">Broadpeak is a UK-based IT distribution company</h2>
                             </div>
@@ -69,7 +71,7 @@ About Us
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6">
-                                <div class="about-one__right">
+                                <div class="about-one__right wow fadeInUp" data-wow-delay="100ms">
                                     <div class="section-title text-left">
                                         <h2 class="section-title__title">We don’t just distribute products</h2>
                                     </div>
@@ -83,9 +85,9 @@ About Us
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-xl-6">
+                            <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div class="about-one__left">
-                                    <div class="about-one__img-box wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                                    <div class="about-one__img-box" data-tilt>
                                         <div class="about-one__img">
                                             <img src="assets/images/about/aboutp2.jpg" alt="Broadpeak-Intl">
                                         </div>
@@ -105,15 +107,17 @@ About Us
                 <div class="row">
                     <div class="col-xl-6">
                         <div class="about-one__left">
-                            <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-                                <div class="about-one__img">
-                                    <img src="assets/images/about/About-us.jpg" alt="Broadpeak-Intl">
+                            <div class="wow slideInLeft" data-wow-delay="100ms" data-wow-duration="900ms">
+                                <div class="about-one__img-box" data-tilt>
+                                    <div class="about-one__img">
+                                        <img src="assets/images/about/About-us.jpg" alt="Broadpeak-Intl">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6">
-                        <div class="about-one__right">
+                        <div class="about-one__right wow fadeInUp" data-wow-delay="200ms">
                             <div class="section-title text-left">
                                 <h2 class="section-title__title">Our customer-centric philosophy</h2>
                             </div>

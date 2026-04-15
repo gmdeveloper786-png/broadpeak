@@ -11,7 +11,7 @@ Contact Us
             <div class="page-header-bg" style="background-image: url(assets/images/home/about-bread.jpg)">
             </div>
             <div class="container">
-                <div class="page-header__inner">
+                <div class="page-header__inner wow fadeInUp" data-wow-delay="0ms">
                     <ul class="thm-breadcrumb list-unstyled">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><span>/</span></li>
@@ -33,7 +33,7 @@ Contact Us
                         <img src="assets/images/update-10-02-2023/shapes/get-insurance-four-shape-2.png" alt="">
                     </div>
                     <div class="container">
-                        <div class="section-title-three text-left">
+                        <div class="section-title-three text-left wow fadeInUp" data-wow-delay="0ms">
                             <div class="section-title-three__sub-title-box">
                                 <p class="section-title-three__sub-title">Our Offices</p>
                                 <div class="section-title-three__shape"></div>
@@ -42,7 +42,7 @@ Contact Us
                         </div>
                         <div class="get-insurance-four__main-tab-box tabs-box">
                             <div class="row">
-                                <div class="col-xl-6">
+                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
                                     <ul class="tab-buttons clearfix list-unstyled">
                                         <li data-tab="#head-office" class="tab-btn active-btn">
                                             <div class="content-box">
@@ -106,7 +106,7 @@ Contact Us
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-xl-6">
+                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="180ms">
                                     <div class="tabs-content">
                                         <!--tab-->
                                         <div class="tab active-tab" id="head-office">
@@ -273,7 +273,7 @@ Contact Us
                 <div class="row">
                     <div class="col-xl-12 col-lg-12">
                         <div class="contact-page__left">
-                            <div class="section-title text-center">
+                            <div class="section-title text-center wow fadeInUp" data-wow-delay="0ms">
                                 <div class="section-sub-title-box">
                                     <p class="section-sub-title">Contact us</p>
                                     <div class="section-title-shape-1">
@@ -287,7 +287,7 @@ Contact Us
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-12 col-lg-12">
+                    <div class="col-xl-12 col-lg-12 wow fadeInUp" data-wow-delay="120ms">
                         <div class="contact-page__right">
                             <div class="contact-page__form">
                                 <form action="{{ route('contact.submit') }}" method="post" class="comment-one__form">

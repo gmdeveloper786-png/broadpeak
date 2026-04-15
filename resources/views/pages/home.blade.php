@@ -111,7 +111,7 @@ Home
 <!--Main Slider End-->
 
 <!--Brand One Start-->
-<section class="brand-one">
+<section class="brand-one wow fadeInUp" data-wow-delay="80ms">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -213,15 +213,17 @@ Home
         <div class="row">
             <div class="col-xl-6">
                 <div class="about-one__left">
-                    <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
-                        <div class="about-one__img">
-                            <img src="assets/images/about/About-us.jpg" alt="Broadpeak-Intl">
+                    <div class="wow slideInLeft" data-wow-delay="100ms" data-wow-duration="900ms">
+                        <div class="about-one__img-box" data-tilt>
+                            <div class="about-one__img">
+                                <img src="assets/images/about/About-us.jpg" alt="Broadpeak-Intl">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-xl-6">
-                <div class="about-one__right">
+                <div class="about-one__right wow fadeInUp" data-wow-delay="180ms">
                     <div class="section-title text-left">
                         <div class="section-sub-title-box">
                             <p class="section-sub-title">Connecting the Future, Today</p>
@@ -264,6 +266,7 @@ Home
 <section class="feature-two">
     <div class="container">
         <div class="row">
+            <div class="col-12 wow fadeInUp" data-wow-delay="0ms">
             <div class="section-title text-center">
                 <div class="section-sub-title-box">
                     <p class="section-sub-title">Innovative Products for Every Connectivity Need</p>
@@ -277,9 +280,10 @@ Home
                     businesses
                     seeking efficiency, security, and scalability.</p>
             </div>
+            </div>
             <!--Feature Two Single Start-->
             <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="100ms">
-                <div class="feature-two__single">
+                <div class="feature-two__single" data-tilt>
                     <div class="feature-two__img">
                         <img src="assets/images/home/networking-switches.jpg" alt="Networking Switches">
                     </div>
@@ -299,7 +303,7 @@ Home
             <!--Feature Two Single End-->
             <!--Feature Two Single Start-->
             <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="200ms">
-                <div class="feature-two__single">
+                <div class="feature-two__single" data-tilt>
                     <div class="feature-two__img">
                         <img src="assets/images/home/wifi-products.jpg" alt="WiFi Products">
                     </div>
@@ -318,7 +322,7 @@ Home
             <!--Feature Two Single End-->
             <!--Feature Two Single Start-->
             <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="300ms">
-                <div class="feature-two__single">
+                <div class="feature-two__single" data-tilt>
                     <div class="feature-two__img">
                         <img src="assets/images/home/ups-systems.jpg" alt="UPS Systems">
                     </div>
@@ -336,8 +340,8 @@ Home
             </div>
             <!--Feature Two Single End-->
             <!--Feature Two Single Start-->
-            <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="300ms">
-                <div class="feature-two__single">
+            <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="400ms">
+                <div class="feature-two__single" data-tilt>
                     <div class="feature-two__img">
                         <img src="assets/images/home/access-control-readers.jpg" alt="Access Control Readers">
                     </div>
@@ -366,7 +370,7 @@ Home
     <div class="container">
         <div class="services-two__top">
             <div class="row">
-                <div class="col-xl-12 col-lg-12">
+                <div class="col-xl-12 col-lg-12 wow fadeInUp" data-wow-delay="0ms">
                     <div class="services-two__top-left">
                         <div class="section-title text-center">
                             <div class="section-sub-title-box">
@@ -382,7 +386,7 @@ Home
             <div class="row">
                 <!--Services Two Single Start-->
                 <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                    <div class="services-two__single">
+                    <div class="services-two__single" data-tilt>
                         <div class="services-two__icon-box">
                             <div class="services-two__icon">
                                 <img src="assets/images/home/1.svg" alt="Expertise">
@@ -395,7 +399,7 @@ Home
                 <!--Services Two Single End-->
                 <!--Services Two Single Start-->
                 <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                    <div class="services-two__single">
+                    <div class="services-two__single" data-tilt>
                         <div class="services-two__icon-box">
                             <div class="services-two__icon">
                                 <img src="assets/images/home/2.svg" alt="Quality Products">
@@ -408,7 +412,7 @@ Home
                 <!--Services Two Single End-->
                 <!--Services Two Single Start-->
                 <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="services-two__single">
+                    <div class="services-two__single" data-tilt>
                         <div class="services-two__icon-box">
                             <div class="services-two__icon">
                                 <img src="assets/images/home/3.svg" alt="Exceptional Support">
@@ -431,7 +435,7 @@ Home
 
 
 <!--Portfolio Carousel Page Start-->
-<section class="portfolio-carousel-page">
+<section class="portfolio-carousel-page wow fadeInUp" data-wow-delay="100ms">
     <div class="container">
         <div class="row">
             <div class="thm-owl__carousel owl-theme owl-carousel portfolio-carousel carousel-dot-style"

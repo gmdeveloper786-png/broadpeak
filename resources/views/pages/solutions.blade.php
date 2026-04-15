@@ -11,7 +11,7 @@ Solutions
             <div class="page-header-bg" style="background-image: url(assets/images/home/about-bread.jpg)">
             </div>
             <div class="container">
-                <div class="page-header__inner">
+                <div class="page-header__inner wow fadeInUp" data-wow-delay="0ms">
                     <ul class="thm-breadcrumb list-unstyled">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><span>/</span></li>
@@ -29,7 +29,7 @@ Solutions
                 <div class="row">
                     <!--Services One Single Start-->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="services-one__single">
+                        <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
                                 <img src="assets/images/solutions/NetworkSolutions.webp" alt="Network Solutions">
                             </div>
@@ -41,7 +41,7 @@ Solutions
                     <!--Services One Single End-->
                     <!--Services One Single Start-->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                        <div class="services-one__single">
+                        <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
                                 <img src="assets/images/solutions/PhysicalSecurity.webp" alt="Physical Security">
                             </div>
@@ -53,7 +53,7 @@ Solutions
                     <!--Services One Single End-->
                     <!--Services One Single Start-->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="services-one__single">
+                        <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
                                 <img src="assets/images/solutions/PowerSolutions.webp" alt="Power Solutions">
                             </div>
@@ -65,7 +65,7 @@ Solutions
                     <!--Services One Single End-->
                     <!--Services One Single Start-->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                        <div class="services-one__single">
+                        <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
                                 <img src="assets/images/solutions/StorageSolutions.webp" alt="Storage Solutions">
                             </div>
@@ -77,7 +77,7 @@ Solutions
                     <!--Services One Single End-->
                     <!--Services One Single Start-->
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms">
-                        <div class="services-one__single">
+                        <div class="services-one__single" data-tilt>
                             <div class="service-one__img">
                                 <img src="assets/images/solutions/infrastructureSolutions.webp" alt="Infrastructure Solutions">
                             </div>

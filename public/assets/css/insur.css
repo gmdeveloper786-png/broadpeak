@@ -150,7 +150,7 @@ ul {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1250px;
   }
 }
 
@@ -6250,6 +6250,16 @@ ul {
   display: block;
 }
 
+/* Brand logos: hide until Swiper measures slides (avoids one-logo flash / jump) */
+.brand-swiper-autoplay {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.brand-swiper-autoplay.brand-swiper--ready {
+  opacity: 1;
+}
+
 .brand-one__main-content .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6260,17 +6270,41 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  height: auto;
+}
+
+.brand-one__main-content .swiper-slide > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 72px;
+  padding: 8px 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .brand-one__main-content .swiper-slide img {
   -webkit-transition: 500ms;
   transition: 500ms;
-  width: 100%;
-  height: 60px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 78px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
 }
 
 .brand-one__main-content .swiper-slide img:hover {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 
 /*--------------------------------------------------------------
@@ -28000,7 +28034,7 @@ ul li ul .is-new-menu>a>span::after {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu .mobile-nav__toggler {
-    color: var(--insur-base);
+    color: var(--insur-primary);
     display: inline-block;
     padding: 12px 0;
   }
@@ -28032,7 +28066,7 @@ ul li ul .is-new-menu>a>span::after {
   }
 
   .main-menu .mobile-nav__toggler {
-    color: var(--insur-base);
+    color: var(--insur-primary);
     display: inline-block;
     padding: 12px 0;
   }
@@ -36015,4 +36049,193 @@ ul li ul .is-new-menu>a>span::after {
 /* Hide native video download control (mobile WebKit / Chrome) where supported */
 .insurance-details__img-1 video::-webkit-media-controls-download-button {
   display: none !important;
+}
+
+/* WOW + Vanilla Tilt helpers */
+[data-tilt] {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.feature-two__single[data-tilt],
+.services-two__single[data-tilt],
+.services-one__single[data-tilt],
+.about-one__img-box[data-tilt],
+.insurance-details__img-1[data-tilt] {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/*--------------------------------------------------------------
+# Careers page (Broadpeak theme)
+--------------------------------------------------------------*/
+.careers-intro {
+  position: relative;
+  display: block;
+  padding: 70px 0 60px;
+  background-color: var(--insur-white);
+}
+
+.careers-intro__inner {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.careers-intro__title {
+  margin: 0 0 22px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: var(--insur-letter-spacing);
+  color: var(--insur-black);
+}
+
+.careers-intro__text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--insur-gray);
+}
+
+.careers-jobs {
+  position: relative;
+  display: block;
+  padding: 72px 0 90px;
+  background-color: var(--insur-black);
+  color: var(--insur-white);
+  border-bottom: 1px solid rgba(var(--insur-white-rgb), 0.1);
+}
+
+.careers-jobs__heading {
+  margin: 0 0 70px;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: var(--insur-letter-spacing);
+  color: var(--insur-white);
+}
+
+.careers-jobs__list {
+  border-top: 1px solid rgba(var(--insur-white-rgb), 0.12);
+}
+
+.careers-jobs__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px 28px;
+  padding: 26px 0;
+  border-bottom: 1px solid rgba(var(--insur-white-rgb), 0.1);
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.careers-jobs__link:hover {
+  color: var(--insur-primary);
+}
+
+.careers-jobs__link:hover .careers-jobs__icon {
+  color: var(--insur-primary);
+}
+
+.careers-jobs__num {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  min-width: 36px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(var(--insur-white-rgb), 0.45);
+}
+
+.careers-jobs__main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 16px 24px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.careers-jobs__role {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: var(--insur-letter-spacing);
+  color: var(--insur-white);
+}
+
+.careers-jobs__link:hover .careers-jobs__role {
+  color: var(--insur-primary);
+}
+
+.careers-jobs__open {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(var(--insur-white-rgb), 0.55);
+}
+
+.careers-jobs__link:hover .careers-jobs__open {
+  color: rgba(var(--insur-primary-rgb), 0.95);
+}
+
+.careers-jobs__icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-size: 18px;
+  line-height: 1;
+  color: rgba(var(--insur-white-rgb), 0.85);
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+@media (max-width: 767px) {
+  .careers-intro {
+    padding: 50px 0 40px;
+  }
+
+  .careers-intro__title {
+    font-size: 28px;
+  }
+
+  .careers-intro__text {
+    font-size: 16px;
+  }
+
+  .careers-jobs {
+    padding: 52px 0 70px;
+  }
+
+  .careers-jobs__heading {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
+  .careers-jobs__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .careers-jobs__role {
+    font-size: 19px;
+  }
 }

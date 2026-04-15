@@ -50,5 +50,9 @@ Route::get('/infrastructure-solutions', function () {
     return view('pages.infrastructure-solutions');
 })->name('infrastructure-solutions');
 
+Route::get('/careers', function () {
+    return view('pages.careers');
+})->name('careers');
+
 Route::post('/contact/submit', [ContactFormController::class, 'contact'])->name('contact.submit');
 Route::post('/request-quote/submit', [ContactFormController::class, 'quote'])->name('quote.submit');

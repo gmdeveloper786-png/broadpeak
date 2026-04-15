@@ -22,8 +22,32 @@
     if ($(".thm-swiper__slider").length) {
       $(".thm-swiper__slider").each(function () {
         let elm = $(this);
-        let options = elm.data("swiper-options");
-        let thmSwiperSlider = new Swiper(elm, options);
+        let options = elm.data("swiper-options") || {};
+        let el = elm.get(0);
+
+        if (elm.hasClass("brand-swiper-autoplay")) {
+          options = $.extend(true, {}, options, {
+            observer: true,
+            observeParents: true,
+            preloadImages: true,
+            on: {
+              init: function () {
+                var swiper = this;
+                requestAnimationFrame(function () {
+                  swiper.update();
+                  if (swiper.autoplay && swiper.autoplay.start) {
+                    swiper.autoplay.start();
+                  }
+                  if (swiper.el) {
+                    swiper.el.classList.add("brand-swiper--ready");
+                  }
+                });
+              }
+            }
+          });
+        }
+
+        new Swiper(el, options);
       });
     }
   }
@@ -569,6 +593,32 @@
     });
     wow.init();
   }
+
+  /** Subtle tilt on cards/images (desktop; respects reduced motion + small screens) */
+  function insurInitTilt() {
+    if (typeof VanillaTilt === "undefined") {
+      return;
+    }
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+    if (window.matchMedia("(max-width: 991px)").matches) {
+      return;
+    }
+    var tiltEls = document.querySelectorAll("[data-tilt]");
+    if (!tiltEls.length) {
+      return;
+    }
+    VanillaTilt.init(tiltEls, {
+      max: 10,
+      speed: 450,
+      scale: 1.02,
+      glare: true,
+      "max-glare": 0.15,
+      gyroscope: false
+    });
+  }
+  insurInitTilt();
 
   if ($("#donate-amount__predefined").length) {
     let donateInput = $("#donate-amount");

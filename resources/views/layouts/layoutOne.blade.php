@@ -22,31 +22,31 @@
     rel="stylesheet">
 
 
-  <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendors/animate/animate.min.css">
-  <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css">
-  <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css">
-  <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css">
-  <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css">
-  <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css">
-  <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css">
-  <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css">
-  <link rel="stylesheet" href="assets/vendors/insur-icons/style.css">
-  <link rel="stylesheet" href="assets/vendors/insur-two-icon/style.css">
-  <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css">
-  <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css">
-  <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css">
-  <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css">
-  <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css">
-  <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css">
-  <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css">
-  <link rel="stylesheet" href="assets/vendors/ion.rangeSlider/css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/animate/custom-animate.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/jarallax/jarallax.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.pips.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/odometer/odometer.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/swiper/swiper.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/insur-icons/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/insur-two-icon/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/tiny-slider/tiny-slider.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/reey-font/stylesheet.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/owl.carousel.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/owl.theme.default.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/bxslider/jquery.bxslider.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/css/bootstrap-select.min.css') }}  ">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/vegas/vegas.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/timepicker/timePicker.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/vendors/ion.rangeSlider/css/ion.rangeSlider.min.css') }}">
 
   <!-- template styles -->
-  <link rel="stylesheet" id="langLtr" href="assets/css/insur.css">
+  <link rel="stylesheet" id="langLtr" href="{{ asset('assets/css/insur.css') }}">
 </head>
 
 <body class="custom-cursor ">
@@ -116,7 +116,9 @@
                           <li><a href="https://www.cisco.com/" target="_blank">Cisco</a></li>
                         </ul>
                       </li>
-
+                      <li>
+                        <a href="{{ route('careers') }}">Careers</a>
+                      </li>
                       <li>
                         <a href="{{ route('contact-us') }}">Contact Us</a>
                       </li>
@@ -229,9 +231,7 @@
             <div class="col-xl-12">
               <div class="site-footer-four__bottom-inner">
                 <p class="site-footer-four__bottom-text">
-                  Copyright © <script>
-                    document.write(new Date().getFullYear());
-                  </script> Broadpeak-Intl. All rights reserved.
+                  Copyright © 2024 Broadpeak-Intl. All rights reserved.
                 </p>
               </div>
             </div>
@@ -313,36 +313,37 @@
   <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
 
-  <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
-  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendors/jarallax/jarallax.min.js"></script>
-  <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
-  <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
-  <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
-  <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
-  <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-  <script src="assets/vendors/nouislider/nouislider.min.js"></script>
-  <script src="assets/vendors/odometer/odometer.min.js"></script>
-  <script src="assets/vendors/swiper/swiper.min.js"></script>
-  <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
-  <script src="assets/vendors/wnumb/wNumb.min.js"></script>
-  <script src="assets/vendors/wow/wow.js"></script>
-  <script src="assets/vendors/isotope/isotope.js"></script>
-  <script src="assets/vendors/countdown/countdown.min.js"></script>
-  <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
-  <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
-  <script src="assets/vendors/vegas/vegas.min.js"></script>
-  <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
-  <script src="assets/vendors/timepicker/timePicker.js"></script>
-  <script src="assets/vendors/circleType/jquery.circleType.js"></script>
-  <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
-  <script src="assets/vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+  <script src="{{ asset('assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/odometer/odometer.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/swiper/swiper.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/tiny-slider/tiny-slider.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
+  <script src="{{ asset('assets/vendors/vanilla-tilt/vanilla-tilt.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/isotope/isotope.js') }}"></script>
+  <script src="{{ asset('assets/vendors/countdown/countdown.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/bxslider/jquery.bxslider.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/vegas/vegas.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
+  <script src="{{ asset('assets/vendors/timepicker/timePicker.js') }}"></script>
+  <script src="{{ asset('assets/vendors/circleType/jquery.circleType.js') }}"></script>
+  <script src="{{ asset('assets/vendors/circleType/jquery.lettering.min.js') }}"></script>
+  <script src="{{ asset('assets/vendors/ion.rangeSlider/js/ion.rangeSlider.min.js') }}"></script>
 
 
 
   <!-- template js -->
-  <script src="assets/js/insur.js"></script>
+  <script src="{{ asset('assets/js/insur.js') }}"></script>
 </body>
 
 </html>
