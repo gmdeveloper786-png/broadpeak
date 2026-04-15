@@ -89,9 +89,23 @@
                   <div class="main-menu__main-menu-box-inner">
                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                     <ul class="main-menu__list">
-                      <li><a href="{{ route('home') }}">Home</a></li>
-                      <li><a href="{{ route('about-us') }}">About Us</a></li>
-                      <li class="dropdown">
+                      <li @class(['current' => request()->routeIs('home')])>
+                        <a href="{{ route('home') }}">Home</a>
+                      </li>
+                      <li @class(['current' => request()->routeIs('about-us')])>
+                        <a href="{{ route('about-us') }}">About Us</a>
+                      </li>
+                      <li @class([
+                          'dropdown',
+                          'current' => request()->routeIs(
+                              'solutions',
+                              'network-solutions',
+                              'physical-security',
+                              'power-solutions',
+                              'storage-solutions',
+                              'infrastructure-solutions'
+                          ),
+                      ])>
                         <a href="{{ route('solutions') }}">Solutions</a>
                         <ul>
                           <li><a href="{{ route('network-solutions') }}">Network Solutions</a></li>
@@ -116,10 +130,10 @@
                           <li><a href="https://www.cisco.com/" target="_blank">Cisco</a></li>
                         </ul>
                       </li>
-                      <li>
+                      <li @class(['current' => request()->routeIs('careers')])>
                         <a href="{{ route('careers') }}">Careers</a>
                       </li>
-                      <li>
+                      <li @class(['current' => request()->routeIs('contact-us')])>
                         <a href="{{ route('contact-us') }}">Contact Us</a>
                       </li>
                     </ul>
@@ -310,7 +324,9 @@
   <!-- /.mobile-nav__wrapper -->
 
 
-  <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+  <a href="#" data-target="html" class="scroll-to-target scroll-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </a>
 
 
   <script src="{{ asset('assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>

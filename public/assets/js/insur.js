@@ -342,13 +342,13 @@
   if ($(".scroll-to-target").length) {
     $(".scroll-to-target").on("click", function () {
       var target = $(this).attr("data-target");
-      // animate
-      $("html, body").animate({
-          scrollTop: $(target).offset().top
-        },
-        1000
-      );
-
+      var $t = $(target);
+      var top = $t.length ? $t.offset().top : 0;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        $("html, body").scrollTop(top);
+      } else {
+        $("html, body").animate({ scrollTop: top }, 720, "swing");
+      }
       return false;
     });
   }
@@ -496,11 +496,7 @@
     });
   }
 
-  if ($(".main-menu__list").length) {
-    // dynamic current class
-    let mainNavUL = $(".main-menu__list");
-    dynamicCurrentMenuClass(mainNavUL);
-  }
+  // Main header nav: active state is set server-side in Blade (routeIs), not by filename.
   if ($(".service-details__sidebar-service-list").length) {
     // dynamic current class
     let mainNavUL = $(".service-details__sidebar-service-list");
@@ -1109,9 +1105,11 @@
     if ($(".scroll-to-top").length) {
       var strickyScrollPos = 100;
       if ($(window).scrollTop() > strickyScrollPos) {
-        $(".scroll-to-top").fadeIn(500);
+        $(".scroll-to-top").fadeIn(400, function () {
+          $(this).css({ display: "flex" });
+        });
       } else if ($(this).scrollTop() <= strickyScrollPos) {
-        $(".scroll-to-top").fadeOut(500);
+        $(".scroll-to-top").fadeOut(400);
       }
     }
 

@@ -438,6 +438,14 @@ Home
 <section class="portfolio-carousel-page wow fadeInUp" data-wow-delay="100ms">
     <div class="container">
         <div class="row">
+            <div class="col-12 wow fadeInUp" data-wow-delay="0ms">
+                <div class="section-title text-center">
+                    <div class="section-sub-title-box">
+                        <p class="section-sub-title">Our Products</p>
+                    </div>
+                    <h2 class="section-title__title">Tailored Solutions to Power Your Business Needs</h2>
+                </div>
+            </div>
             <div class="thm-owl__carousel owl-theme owl-carousel portfolio-carousel carousel-dot-style"
                 data-owl-options='{
                                                 "items": 3,
